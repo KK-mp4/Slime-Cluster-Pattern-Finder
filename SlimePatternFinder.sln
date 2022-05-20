@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SlimePatternFinder", "SlimePatternFinder\SlimePatternFinder.vcxproj", "{803C9EE7-3998-4BF9-8A1F-6E75AE2ED3FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{803C9EE7-3998-4BF9-8A1F-6E75AE2ED3FB}.Debug|x64.ActiveCfg = Debug|x64
+		{803C9EE7-3998-4BF9-8A1F-6E75AE2ED3FB}.Debug|x64.Build.0 = Debug|x64
+		{803C9EE7-3998-4BF9-8A1F-6E75AE2ED3FB}.Debug|x86.ActiveCfg = Debug|Win32
+		{803C9EE7-3998-4BF9-8A1F-6E75AE2ED3FB}.Debug|x86.Build.0 = Debug|Win32
+		{803C9EE7-3998-4BF9-8A1F-6E75AE2ED3FB}.Release|x64.ActiveCfg = Release|x64
+		{803C9EE7-3998-4BF9-8A1F-6E75AE2ED3FB}.Release|x64.Build.0 = Release|x64
+		{803C9EE7-3998-4BF9-8A1F-6E75AE2ED3FB}.Release|x86.ActiveCfg = Release|Win32
+		{803C9EE7-3998-4BF9-8A1F-6E75AE2ED3FB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9AD75F5-BA82-4D9A-9042-BF751A252EC3}
+	EndGlobalSection
+EndGlobal

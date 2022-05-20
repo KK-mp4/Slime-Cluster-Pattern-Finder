@@ -1,5 +1,4 @@
 ﻿#pragma once
-
 #include <math.h>
 #include "JavaRandom.h"
 
@@ -13,7 +12,7 @@ namespace CppCLRWinformsProjekt {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Zusammenfassung für Form1
+	/// Main form
 	/// </summary>
 	public ref class Form1 : public System::Windows::Forms::Form
 	{
@@ -21,15 +20,9 @@ namespace CppCLRWinformsProjekt {
 		Form1(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: Konstruktorcode hier hinzufügen.
-			//
 		}
 
 	protected:
-		/// <summary>
-		/// Verwendete Ressourcen bereinigen.
-		/// </summary>
 		~Form1()
 		{
 			if (components)
@@ -40,14 +33,6 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 
 	protected:
-
-
-
-
-
-
-
-
 
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::TextBox^ textBox1;
@@ -65,6 +50,8 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::CheckBox^ checkBox1;
 	private: System::Windows::Forms::CheckBox^ checkBox2;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label7;
 
 	private:
 		/// <summary>
@@ -79,9 +66,9 @@ namespace CppCLRWinformsProjekt {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -97,6 +84,8 @@ namespace CppCLRWinformsProjekt {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -106,15 +95,15 @@ namespace CppCLRWinformsProjekt {
 			this->dataGridView1->AllowUserToDeleteRows = false;
 			this->dataGridView1->AllowUserToResizeColumns = false;
 			this->dataGridView1->AllowUserToResizeRows = false;
-			dataGridViewCellStyle4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+			dataGridViewCellStyle1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(79)));
-			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+			dataGridViewCellStyle1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			dataGridViewCellStyle4->ForeColor = System::Drawing::Color::White;
-			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)),
+			dataGridViewCellStyle1->ForeColor = System::Drawing::Color::White;
+			dataGridViewCellStyle1->SelectionBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(79)));
-			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::Color::White;
-			this->dataGridView1->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle1->SelectionForeColor = System::Drawing::Color::White;
+			this->dataGridView1->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			this->dataGridView1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
@@ -125,26 +114,26 @@ namespace CppCLRWinformsProjekt {
 			this->dataGridView1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->ColumnHeadersVisible = false;
-			dataGridViewCellStyle5->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(79)));
-			dataGridViewCellStyle5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			dataGridViewCellStyle5->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(95)), static_cast<System::Int32>(static_cast<System::Byte>(95)),
+			dataGridViewCellStyle2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(95)), static_cast<System::Int32>(static_cast<System::Byte>(95)),
 				static_cast<System::Int32>(static_cast<System::Byte>(97)));
-			dataGridViewCellStyle5->SelectionBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)),
+			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(79)));
-			dataGridViewCellStyle5->SelectionForeColor = System::Drawing::Color::White;
-			dataGridViewCellStyle5->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->dataGridView1->DefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::Color::White;
+			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->dataGridView1->DefaultCellStyle = dataGridViewCellStyle2;
 			this->dataGridView1->GridColor = System::Drawing::Color::Silver;
 			this->dataGridView1->Location = System::Drawing::Point(83, 12);
 			this->dataGridView1->MultiSelect = false;
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->ReadOnly = true;
 			this->dataGridView1->RowHeadersVisible = false;
-			dataGridViewCellStyle6->ForeColor = System::Drawing::Color::White;
-			this->dataGridView1->RowsDefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle3->ForeColor = System::Drawing::Color::White;
+			this->dataGridView1->RowsDefaultCellStyle = dataGridViewCellStyle3;
 			this->dataGridView1->Size = System::Drawing::Size(412, 365);
 			this->dataGridView1->TabIndex = 0;
 			this->dataGridView1->CellClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Form1::dataGridView1_CellClick);
@@ -276,6 +265,7 @@ namespace CppCLRWinformsProjekt {
 			this->tbR->Size = System::Drawing::Size(133, 13);
 			this->tbR->TabIndex = 3;
 			this->tbR->Text = L"10000";
+			this->tbR->TextChanged += gcnew System::EventHandler(this, &Form1::tbR_TextChanged);
 			// 
 			// tbSeed
 			// 
@@ -326,6 +316,29 @@ namespace CppCLRWinformsProjekt {
 			this->checkBox2->Text = L"Enable rotation";
 			this->checkBox2->UseVisualStyleBackColor = true;
 			// 
+			// label6
+			// 
+			this->label6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->Location = System::Drawing::Point(5, 356);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(78, 12);
+			this->label6->TabIndex = 16;
+			this->label6->Text = L"Probability to find:";
+			// 
+			// label7
+			// 
+			this->label7->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label7->Location = System::Drawing::Point(5, 368);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(0, 12);
+			this->label7->TabIndex = 17;
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -333,6 +346,8 @@ namespace CppCLRWinformsProjekt {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(43)), static_cast<System::Int32>(static_cast<System::Byte>(43)),
 				static_cast<System::Int32>(static_cast<System::Byte>(45)));
 			this->ClientSize = System::Drawing::Size(646, 389);
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->checkBox2);
 			this->Controls->Add(this->checkBox1);
 			this->Controls->Add(this->label1);
@@ -363,6 +378,7 @@ namespace CppCLRWinformsProjekt {
 	private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e)
 	{
 		UpdateMatrix();
+		Probability();
 	}
 
 	private: System::Void UpdateMatrix()
@@ -386,11 +402,13 @@ namespace CppCLRWinformsProjekt {
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		UpdateMatrix();
+		Probability();
 	}
 
 	private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		UpdateMatrix();
+		Probability();
 	}
 
 	private: System::Void dataGridView1_CellClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e)
@@ -406,7 +424,8 @@ namespace CppCLRWinformsProjekt {
 		{
 			dataGridView1->Rows[i]->Cells[j]->Value = "#";
 		}
-		
+
+		Probability();
 	}
 
 	private: System::Void bClear_Click(System::Object^ sender, System::EventArgs^ e)
@@ -448,6 +467,11 @@ namespace CppCLRWinformsProjekt {
 		try
 		{
 			r = Convert::ToInt32(tbR->Text);
+			if (r > 1875000)
+			{
+				r = 1875000;
+				tbR->Text = "1875000";
+			}
 		}
 		catch (...)
 		{
@@ -485,7 +509,7 @@ namespace CppCLRWinformsProjekt {
 		{
 			for (; zPosition > -spiralRadius; zPosition--)	// goes towards -z
 			{
-				if (IsSlimeMask(seed, xPosition, zPosition, matrix, n, m))
+				if (FitsMask(seed, xPosition, zPosition, matrix, n, m))
 				{
 					tbOutput->Text += "Chunk (" + xPosition + " / " + zPosition + ")\r\n";
 					if (checkBox1->Checked == true)
@@ -496,7 +520,7 @@ namespace CppCLRWinformsProjekt {
 			}
 			for (; xPosition > -spiralRadius; xPosition--)	// goes towards -x
 			{
-				if (IsSlimeMask(seed, xPosition, zPosition, matrix, n, m))
+				if (FitsMask(seed, xPosition, zPosition, matrix, n, m))
 				{
 					tbOutput->Text += "Chunk (" + xPosition + " / " + zPosition + ")\r\n";
 					if (checkBox1->Checked == true)
@@ -507,7 +531,7 @@ namespace CppCLRWinformsProjekt {
 			}
 			for (; zPosition < spiralRadius; zPosition++)		// goes towards z
 			{
-				if (IsSlimeMask(seed, xPosition, zPosition, matrix, n, m))
+				if (FitsMask(seed, xPosition, zPosition, matrix, n, m))
 				{
 					tbOutput->Text += "Chunk (" + xPosition + " / " + zPosition + ")\r\n";
 					if (checkBox1->Checked == true)
@@ -518,7 +542,7 @@ namespace CppCLRWinformsProjekt {
 			}
 			for (; xPosition < spiralRadius; xPosition++)		// goes towards x
 			{
-				if (IsSlimeMask(seed, xPosition, zPosition, matrix, n, m))
+				if (FitsMask(seed, xPosition, zPosition, matrix, n, m))
 				{
 					tbOutput->Text += "Chunk (" + xPosition + " / " + zPosition + ")\r\n";
 					if (checkBox1->Checked == true)
@@ -532,7 +556,7 @@ namespace CppCLRWinformsProjekt {
 		return;
 	}
 
-	private: System::Boolean IsSlimeMask(long long seed, int x, int z, bool matrix[], int n, int m)
+	private: System::Boolean FitsMask(long long seed, int x, int z, bool matrix[], int n, int m)
 	{
 		for (int i = 0; i < n; i++)
 		{
@@ -553,6 +577,58 @@ namespace CppCLRWinformsProjekt {
 		JavaRandom rand;
 		rand.setSeed(seed + (uint64_t)(int32_t)(x * x * 4987142U) + (uint64_t)(int32_t)(x * 5947611U) + (uint64_t)(int32_t)(z * z) * 4392871ULL + (uint64_t)(int32_t)(z * 389711U) ^ 987234911ULL);
 		return rand.nextInt(10) == 0;
+	}
+
+	private: System::Void Probability()
+	{
+		int r;
+
+		try
+		{
+			r = Convert::ToInt32(tbR->Text);
+			if (r > 1875000)
+			{
+				r = 1875000;
+				tbR->Text = "1875000";
+			}
+		}
+		catch (...)
+		{
+			return;
+		}
+
+		double probability = 1;
+
+		for (int i = 0; i < dataGridView1->RowCount; i++)
+		{
+			for (int j = 0; j < dataGridView1->ColumnCount; j++)
+			{
+				if (dataGridView1->Rows[i]->Cells[j]->Value == "#")
+				{
+					probability *= 0.1;
+				}
+				else
+				{
+					probability *= 0.9;
+				}
+			}
+		}
+
+		double value = round(probability * r * r * 400000) / 100000;
+
+		if (value > 100)
+		{
+			label7->Text = "100 %";
+		}
+		else
+		{
+			label7->Text = value.ToString() + " %";
+		}	
+	}
+
+	private: System::Void tbR_TextChanged(System::Object^ sender, System::EventArgs^ e)
+	{
+		Probability();
 	}
 };
 }

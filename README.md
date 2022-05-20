@@ -1,5 +1,7 @@
 # WIP Slime Cluster Pattern Finder
-## C++ Desktop application to search for patterns in [slime](https://minecraft.fandom.com/wiki/Slime) chunks in [Minecraft Java Edition](https://www.minecraft.net/) **(Alpha version)**
+## Work in progress C++ Desktop application to search for [slime](https://minecraft.fandom.com/wiki/Slime) chunk patterns in [Minecraft Java Edition](https://www.minecraft.net/)
+Special thanks to [TheBjoel2](https://github.com/TheBjoel2/Slime-Chunk-Finder) for providing his Java linear congruential generator code for C++
+
 ![image](https://user-images.githubusercontent.com/103208695/169470498-02263341-e6da-417a-a5f6-c9bddca67de5.png)
 
 ## Random tests for Dugged's seed 1306145184061456995:

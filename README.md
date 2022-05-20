@@ -14,12 +14,18 @@ Heart: **Chunk (5743 / -9989)**<br >
 Amongus: **Chunk (-34227 / -85398)**<br >
 ![image](https://user-images.githubusercontent.com/103208695/169470850-327f4dd1-df5c-4895-91e1-ba54a93a65fb.png)
 
+Slime face: **Chunk (-36255 / -13500)**<br >
+![image](https://user-images.githubusercontent.com/103208695/169509015-2fe0c819-fab1-4618-b6a7-f6ba511976f3.png)
+
+
 Checkerboard: **Chunk (-6973 / 3808)**<br >
 ![image](https://user-images.githubusercontent.com/103208695/169470983-cd834acb-e9d8-42dd-ba82-10e81d77e1cd.png)
 
-One balled penis: **Chunk (526 / -342)**<br >
-![image](https://user-images.githubusercontent.com/103208695/169471053-6e11994e-edf9-454a-8c18-6293188f4fc2.png)
+Penis: **Chunk (-5998 / -6939)**<br >
+![image](https://user-images.githubusercontent.com/103208695/169512370-c91e2978-a7b1-42cb-b532-b402761f5c5c.png)
 
+160m long strip: **Chunk (9902 / 17578)**<br >
+![image](https://user-images.githubusercontent.com/103208695/169512458-e9fbf0d1-2cdf-4838-8704-fbb9dad2534b.png)
 
 
 # Dependencies
